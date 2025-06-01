@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script src="script.js"></script>
+  <header>
+    <h1 id="myName">Hi, I'm Joe Waweru</h1>
+    <p>A creative learner exploring software engineering with a background in tech, events, and photography.</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+    I’m a motivated beginner software engineering student with a strong interest in building interactive and useful websites. Before diving into coding, I spent several years working with electronic supplies — especially computers and accessories — which helped me develop a technical mindset and attention to detail.
+  </p>
+  <p>
+    I also have hands-on experience in event planning and photography. These roles taught me how to be organized, creative, and work well with different types of people — skills that I now apply to designing and developing websites. Learning HTML, CSS, and JavaScript has opened up a whole new world for me, and this portfolio is my way of sharing that journey. I’m excited to keep learning, keep creating, and one day build things that help others.
+  </p>
+  </section>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <button onclick="toggleProjectDetails()">Show More</button>
+      <div id="projectDetails" style="display: none;">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <span id="email">wawerujoe@gmail.com</span> <button onclick="copyEmail()">Copy</button></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Joe Waweru. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
